@@ -1,0 +1,699 @@
+@font-face {
+  font-family: 'cerax';
+  src:  url('../fonts/cerax.eot?wnv805');
+  src:  url('../fonts/cerax.eot?wnv805#iefix') format('embedded-opentype'),
+    url('../fonts/cerax.ttf?wnv805') format('truetype'),
+    url('../fonts/cerax.woff?wnv805') format('woff'),
+    url('../fonts/cerax.svg?wnv805#cerax') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-cerax-"], [class*=" icon-cerax-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cerax' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cerax-minus:before {
+  content: "\e93b";
+}
+.icon-cerax-subtract:before {
+  content: "\e93b";
+}
+.icon-cerax-minimize:before {
+  content: "\e93b";
+}
+.icon-cerax-line:before {
+  content: "\e93b";
+}
+.icon-cerax-cross:before {
+  content: "\e93c";
+}
+.icon-cerax-cancel:before {
+  content: "\e93c";
+}
+.icon-cerax-close:before {
+  content: "\e93c";
+}
+.icon-cerax-quit:before {
+  content: "\e93c";
+}
+.icon-cerax-remove:before {
+  content: "\e93c";
+}
+.icon-cerax-spotify:before {
+  content: "\e93d";
+}
+.icon-cerax-google-plus:before {
+  content: "\e93e";
+}
+.icon-cerax-pinterest:before {
+  content: "\e93f";
+}
+.icon-cerax-vimeo:before {
+  content: "\e940";
+}
+.icon-cerax-behance:before {
+  content: "\e941";
+}
+.icon-cerax-stack-overflow:before {
+  content: "\e942";
+}
+.icon-cerax-steam:before {
+  content: "\e943";
+}
+.icon-cerax-dribbble:before {
+  content: "\e944";
+}
+.icon-cerax-linkedin:before {
+  content: "\e945";
+}
+.icon-cerax-stack-overflow1:before {
+  content: "\e946";
+}
+.icon-cerax-youtube-play:before {
+  content: "\e947";
+}
+.icon-cerax-skype:before {
+  content: "\e948";
+}
+.icon-cerax-slack:before {
+  content: "\e949";
+}
+.icon-cerax-bitcoin:before {
+  content: "\e94a";
+}
+.icon-cerax-btc:before {
+  content: "\e94a";
+}
+.icon-cerax-digg:before {
+  content: "\e94b";
+}
+.icon-cerax-thumb-tack:before {
+  content: "\e94c";
+}
+.icon-cerax-toggle-on:before {
+  content: "\e94d";
+}
+.icon-cerax-toggle-off:before {
+  content: "\e9d7";
+}
+.icon-cerax-chev-left:before {
+  content: "\e902";
+}
+.icon-cerax-chev-right:before {
+  content: "\e903";
+}
+.icon-cerax-bottom:before {
+  content: "\e900";
+}
+.icon-cerax-chosen1:before {
+  content: "\e905";
+}
+.icon-cerax-chosen2:before {
+  content: "\e906";
+}
+.icon-cerax-chosen3:before {
+  content: "\e907";
+}
+.icon-cerax-chosen4:before {
+  content: "\e908";
+}
+.icon-cerax-date:before {
+  content: "\e90a";
+}
+.icon-cerax-elevate1:before {
+  content: "\e90c";
+}
+.icon-cerax-elevate2:before {
+  content: "\e90d";
+}
+.icon-cerax-elevate3:before {
+  content: "\e90e";
+}
+.icon-cerax-elevate4:before {
+  content: "\e90f";
+}
+.icon-cerax-elevate5:before {
+  content: "\e910";
+}
+.icon-cerax-elevate6:before {
+  content: "\e911";
+}
+.icon-cerax-facebook:before {
+  content: "\e912";
+}
+.icon-cerax-foder:before {
+  content: "\e914";
+}
+.icon-cerax-icon1:before {
+  content: "\e915";
+}
+.icon-cerax-icon2:before {
+  content: "\e916";
+}
+.icon-cerax-icon3:before {
+  content: "\e917";
+}
+.icon-cerax-icon4:before {
+  content: "\e918";
+}
+.icon-cerax-icon5:before {
+  content: "\e919";
+}
+.icon-cerax-icon6:before {
+  content: "\e91a";
+}
+.icon-cerax-instagram:before {
+  content: "\e91b";
+}
+.icon-cerax-left:before {
+  content: "\e91c";
+}
+.icon-cerax-mail:before {
+  content: "\e91d";
+}
+.icon-cerax-map:before {
+  content: "\e91e";
+}
+.icon-cerax-menu-mobie:before {
+  content: "\e91f";
+}
+.icon-cerax-object1:before {
+  content: "\e920";
+}
+.icon-cerax-object2:before {
+  content: "\e921";
+}
+.icon-cerax-object3:before {
+  content: "\e922";
+}
+.icon-cerax-partner1:before {
+  content: "\e924";
+}
+.icon-cerax-partner2:before {
+  content: "\e927";
+}
+.icon-cerax-partner3:before {
+  content: "\e928";
+}
+.icon-cerax-partner4:before {
+  content: "\e929";
+}
+.icon-cerax-phone:before {
+  content: "\e92a";
+}
+.icon-cerax-play:before {
+  content: "\e92b";
+}
+.icon-cerax-plus:before {
+  content: "\e92c";
+}
+.icon-cerax-quote:before {
+  content: "\e92d";
+}
+.icon-cerax-quote2:before {
+  content: "\e92e";
+}
+.icon-cerax-right:before {
+  content: "\e92f";
+}
+.icon-cerax-search:before {
+  content: "\e930";
+}
+.icon-cerax-story1:before {
+  content: "\e931";
+}
+.icon-cerax-story2:before {
+  content: "\e932";
+}
+.icon-cerax-story3:before {
+  content: "\e933";
+}
+.icon-cerax-story4:before {
+  content: "\e934";
+}
+.icon-cerax-tiktok:before {
+  content: "\e935";
+}
+.icon-cerax-time:before {
+  content: "\e936";
+}
+.icon-cerax-top:before {
+  content: "\e937";
+}
+.icon-cerax-tuyet:before {
+  content: "\e938";
+}
+.icon-cerax-twitter:before {
+  content: "\e939";
+}
+.icon-cerax-up:before {
+  content: "\e93a";
+}
+.icon-cerax-Asset-11:before {
+  content: "\e901";
+}
+.icon-cerax-Asset-21:before {
+  content: "\e904";
+}
+.icon-cerax-Asset-31:before {
+  content: "\e909";
+}
+.icon-cerax-Asset-41:before {
+  content: "\e90b";
+}
+.icon-cerax-Asset-51:before {
+  content: "\e913";
+}
+.icon-cerax-Asset-61:before {
+  content: "\e923";
+}
+.icon-cerax-Asset-71:before {
+  content: "\e925";
+}
+.icon-cerax-Asset-81:before {
+  content: "\e926";
+}
+.icon-cerax-Asset-91:before {
+  content: "\e94e";
+}
+.icon-cerax-Asset-101:before {
+  content: "\e94f";
+}
+.icon-cerax-Asset-111:before {
+  content: "\e950";
+}
+.icon-cerax-Asset-121:before {
+  content: "\e951";
+}
+.icon-cerax-Asset-131:before {
+  content: "\e952";
+}
+.icon-cerax-Asset-141:before {
+  content: "\e953";
+}
+.icon-cerax-Asset-151:before {
+  content: "\e954";
+}
+.icon-cerax-Asset-161:before {
+  content: "\e955";
+}
+.icon-cerax-Asset-171:before {
+  content: "\e956";
+}
+.icon-cerax-Asset-181:before {
+  content: "\e957";
+}
+.icon-cerax-Asset-191:before {
+  content: "\e958";
+}
+.icon-cerax-Asset-201:before {
+  content: "\e959";
+}
+.icon-cerax-Asset-211:before {
+  content: "\e95a";
+}
+.icon-cerax-Asset-221:before {
+  content: "\e95b";
+}
+.icon-cerax-Asset-231:before {
+  content: "\e95c";
+}
+.icon-cerax-Asset-241:before {
+  content: "\e95d";
+}
+.icon-cerax-Asset-251:before {
+  content: "\e95e";
+}
+.icon-cerax-Asset-261:before {
+  content: "\e95f";
+}
+.icon-cerax-Asset-271:before {
+  content: "\e960";
+}
+.icon-cerax-Asset-281:before {
+  content: "\e961";
+}
+.icon-cerax-Asset-291:before {
+  content: "\e962";
+}
+.icon-cerax-Asset-301:before {
+  content: "\e963";
+}
+.icon-cerax-Asset-311:before {
+  content: "\e964";
+}
+.icon-cerax-Asset-321:before {
+  content: "\e965";
+}
+.icon-cerax-Asset-331:before {
+  content: "\e966";
+}
+.icon-cerax-bonds:before {
+  content: "\e967";
+}
+.icon-cerax-cashbook:before {
+  content: "\e968";
+}
+.icon-cerax-charity:before {
+  content: "\e969";
+}
+.icon-cerax-collectibles:before {
+  content: "\e96a";
+}
+.icon-cerax-community-grants:before {
+  content: "\e96b";
+}
+.icon-cerax-economic-improvement:before {
+  content: "\e96c";
+}
+.icon-cerax-equity-security:before {
+  content: "\e96d";
+}
+.icon-cerax-fund-accounting:before {
+  content: "\e96e";
+}
+.icon-cerax-in-inventory:before {
+  content: "\e96f";
+}
+.icon-cerax-ledger:before {
+  content: "\e970";
+}
+.icon-cerax-merchant-account:before {
+  content: "\e971";
+}
+.icon-cerax-welfare:before {
+  content: "\e972";
+}
+.icon-cerax-Asset-management:before {
+  content: "\e973";
+}
+.icon-cerax-ATM:before {
+  content: "\e974";
+}
+.icon-cerax-Audit:before {
+  content: "\e975";
+}
+.icon-cerax-Bank-building:before {
+  content: "\e976";
+}
+.icon-cerax-Banknote:before {
+  content: "\e977";
+}
+.icon-cerax-Budget:before {
+  content: "\e978";
+}
+.icon-cerax-Calculator:before {
+  content: "\e979";
+}
+.icon-cerax-Cash-flow:before {
+  content: "\e97a";
+}
+.icon-cerax-Chart:before {
+  content: "\e97b";
+}
+.icon-cerax-Coins:before {
+  content: "\e97c";
+}
+.icon-cerax-Dividend:before {
+  content: "\e97d";
+}
+.icon-cerax-Expenses:before {
+  content: "\e97e";
+}
+.icon-cerax-Financial-planning:before {
+  content: "\e97f";
+}
+.icon-cerax-Graph:before {
+  content: "\e980";
+}
+.icon-cerax-Interest-rate:before {
+  content: "\e981";
+}
+.icon-cerax-Investment:before {
+  content: "\e982";
+}
+.icon-cerax-Invoice:before {
+  content: "\e983";
+}
+.icon-cerax-Loan:before {
+  content: "\e984";
+}
+.icon-cerax-Loss:before {
+  content: "\e985";
+}
+.icon-cerax-Money-bag:before {
+  content: "\e986";
+}
+.icon-cerax-Mortgage:before {
+  content: "\e987";
+}
+.icon-cerax-Mutual-funds:before {
+  content: "\e988";
+}
+.icon-cerax-Profit:before {
+  content: "\e989";
+}
+.icon-cerax-Receipt:before {
+  content: "\e98a";
+}
+.icon-cerax-Revenue:before {
+  content: "\e98b";
+}
+.icon-cerax-Risk-management:before {
+  content: "\e98c";
+}
+.icon-cerax-Savings:before {
+  content: "\e98d";
+}
+.icon-cerax-Stock-market:before {
+  content: "\e98e";
+}
+.icon-cerax-Tax:before {
+  content: "\e98f";
+}
+.icon-cerax-Wallet:before {
+  content: "\e990";
+}
+.icon-cerax-bonds1:before {
+  content: "\e991";
+}
+.icon-cerax-cashbook1:before {
+  content: "\e992";
+}
+.icon-cerax-charity1:before {
+  content: "\e993";
+}
+.icon-cerax-collectibles1:before {
+  content: "\e994";
+}
+.icon-cerax-community-grants1:before {
+  content: "\e995";
+}
+.icon-cerax-economic-improvement1:before {
+  content: "\e996";
+}
+.icon-cerax-equity-security1:before {
+  content: "\e997";
+}
+.icon-cerax-fund-accounting1:before {
+  content: "\e998";
+}
+.icon-cerax-in-inventory1:before {
+  content: "\e999";
+}
+.icon-cerax-ledger1:before {
+  content: "\e99a";
+}
+.icon-cerax-merchant-account1:before {
+  content: "\e99b";
+}
+.icon-cerax-welfare1:before {
+  content: "\e99c";
+}
+.icon-cerax-Credit-Card:before {
+  content: "\e99d";
+}
+.icon-cerax-Emergency-Finance:before {
+  content: "\e99e";
+}
+.icon-cerax-Finance-Analyst:before {
+  content: "\e99f";
+}
+.icon-cerax-Finance-Growth:before {
+  content: "\e9a0";
+}
+.icon-cerax-Finance-Insurance:before {
+  content: "\e9a1";
+}
+.icon-cerax-Finance-Investment:before {
+  content: "\e9a2";
+}
+.icon-cerax-Finance-Mail:before {
+  content: "\e9a3";
+}
+.icon-cerax-Finance-Report:before {
+  content: "\e9a4";
+}
+.icon-cerax-Financial-Bag:before {
+  content: "\e9a5";
+}
+.icon-cerax-Financial-Idea:before {
+  content: "\e9a6";
+}
+.icon-cerax-Financial-Institue:before {
+  content: "\e9a7";
+}
+.icon-cerax-Money-Coin:before {
+  content: "\e9a8";
+}
+.icon-cerax-Money-Exchange:before {
+  content: "\e9a9";
+}
+.icon-cerax-Online-Finance:before {
+  content: "\e9aa";
+}
+.icon-cerax-Piggy-Bank:before {
+  content: "\e9ab";
+}
+.icon-cerax-Time-Money:before {
+  content: "\e9ac";
+}
+.icon-cerax-Asset-management1:before {
+  content: "\e9ad";
+}
+.icon-cerax-ATM1:before {
+  content: "\e9ae";
+}
+.icon-cerax-Audit1:before {
+  content: "\e9af";
+}
+.icon-cerax-Bank-building1:before {
+  content: "\e9b0";
+}
+.icon-cerax-Banknote1:before {
+  content: "\e9b1";
+}
+.icon-cerax-Budget1:before {
+  content: "\e9b2";
+}
+.icon-cerax-Calculator1:before {
+  content: "\e9b3";
+}
+.icon-cerax-Cash-flow1:before {
+  content: "\e9b4";
+}
+.icon-cerax-Chart1:before {
+  content: "\e9b5";
+}
+.icon-cerax-Coins1:before {
+  content: "\e9b6";
+}
+.icon-cerax-Dividend1:before {
+  content: "\e9b7";
+}
+.icon-cerax-Expenses1:before {
+  content: "\e9b8";
+}
+.icon-cerax-Financial-planning1:before {
+  content: "\e9b9";
+}
+.icon-cerax-Graph1:before {
+  content: "\e9ba";
+}
+.icon-cerax-Interest-rate1:before {
+  content: "\e9bb";
+}
+.icon-cerax-Investment1:before {
+  content: "\e9bc";
+}
+.icon-cerax-Invoice1:before {
+  content: "\e9bd";
+}
+.icon-cerax-Loan1:before {
+  content: "\e9be";
+}
+.icon-cerax-Loss1:before {
+  content: "\e9bf";
+}
+.icon-cerax-Money-bag1:before {
+  content: "\e9c0";
+}
+.icon-cerax-Mortgage1:before {
+  content: "\e9c1";
+}
+.icon-cerax-Mutual-funds1:before {
+  content: "\e9c2";
+}
+.icon-cerax-Profit1:before {
+  content: "\e9c3";
+}
+.icon-cerax-Receipt1:before {
+  content: "\e9c4";
+}
+.icon-cerax-Revenue1:before {
+  content: "\e9c5";
+}
+.icon-cerax-Risk-management1:before {
+  content: "\e9c6";
+}
+.icon-cerax-Savings1:before {
+  content: "\e9c7";
+}
+.icon-cerax-Stock-market1:before {
+  content: "\e9c8";
+}
+.icon-cerax-Tax1:before {
+  content: "\e9c9";
+}
+.icon-cerax-Wallet1:before {
+  content: "\e9ca";
+}
+.icon-cerax-bonds2:before {
+  content: "\e9cb";
+}
+.icon-cerax-cashbook2:before {
+  content: "\e9cc";
+}
+.icon-cerax-charity2:before {
+  content: "\e9cd";
+}
+.icon-cerax-collectibles2:before {
+  content: "\e9ce";
+}
+.icon-cerax-community-grants2:before {
+  content: "\e9cf";
+}
+.icon-cerax-economic-improvement2:before {
+  content: "\e9d0";
+}
+.icon-cerax-equity-security2:before {
+  content: "\e9d1";
+}
+.icon-cerax-fund-accounting2:before {
+  content: "\e9d2";
+}
+.icon-cerax-in-inventory2:before {
+  content: "\e9d3";
+}
+.icon-cerax-ledger2:before {
+  content: "\e9d4";
+}
+.icon-cerax-merchant-account2:before {
+  content: "\e9d5";
+}
+.icon-cerax-welfare2:before {
+  content: "\e9d6";
+}
