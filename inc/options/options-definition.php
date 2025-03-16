@@ -472,7 +472,7 @@ function themesflat_customize_default($key) {
 
 		'blog_archive_exclude' => '',
 
-		'blog_featured_title' => '',
+		'blog_featured_title' => 'Blog Detail',
 
 		'style_blog_single' => 'content-single',
 

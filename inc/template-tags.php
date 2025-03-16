@@ -56,7 +56,7 @@ function themesflat_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', ' ' );
 		if ( $tags_list && is_single() ) {
-			$tags_links = sprintf( '<div class="tags-links"><h5>' . esc_html__( 'Tags', 'cerax' ) . '</h5>' . esc_html__( ' %1$s', 'cerax' ) . '</div>', $tags_list  );
+			$tags_links = sprintf( '<div class="tags-links"><h5>' . esc_html__( 'Tags:', 'cerax' ) . '</h5>' . esc_html__( ' %1$s', 'cerax' ) . '</div>', $tags_list  );
 
 		}			
 	}

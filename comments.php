@@ -56,47 +56,46 @@ function themesflat_comments($comment, $args, $depth) {
 
             <div class='comment_content'>
 
-                <div class="comment_meta clearfix">
+                <div class="comment-wrap">
+                    
+                    <div class="comment_meta clearfix">
 
-                    <?php printf( '<h4 class="comment_author">%s</h4>', get_comment_author_link()); ?><?php edit_comment_link(esc_html__('(Edit)', 'cerax' ),'  ','') ?>
+                        <?php printf( '<h4 class="comment_author">%s</h4>', get_comment_author_link()); ?><?php edit_comment_link(esc_html__('(Edit)', 'cerax' ),'  ','') ?>
+
+                    </div>
+
+                    <div class="comment_time">
+
+                        <?php echo get_comment_date() ; ?><?php esc_html_e( ' at ', 'cerax') ?><?php echo get_comment_time() ; ?>
+
+                    </div>
+
+                </div>
+                <div class='comment_text'>
+
+                    <?php comment_text() ?>
+
+                    <?php if ($comment->comment_approved == '0') : ?>
+
+                    <?php endif; ?>
+
+
 
                 </div>
 
-                <div class="comment_time">
+                <?php if (get_comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'])))): ?>
 
-                    <?php echo get_comment_date() ; ?><?php esc_html_e( ' at ', 'cerax') ?><?php echo get_comment_time() ; ?>
+                <div class="comement_reply">
+
+                    <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 
                 </div>
+
+                <?php endif; ?>
 
             </div>
 
-
-
         </div>
-
-        <div class='comment_text'>
-
-            <?php comment_text() ?>
-
-            <?php if ($comment->comment_approved == '0') : ?>
-
-            <?php endif; ?>
-
-
-
-        </div>
-
-        <?php if (get_comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'])))): ?>
-
-        <div class="comement_reply">
-
-			<i class="icon-cerax-comments"></i>
-
-            <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-
-        </div>
-
-        <?php endif; ?>
 
     </article>
 

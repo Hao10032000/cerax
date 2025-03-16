@@ -75,9 +75,9 @@ $links = paginate_links( array(
 
 	'add_args' => array_map( 'urlencode', $query_args ),
 
-	'prev_text' => ( '<i class="icon-cerax-chevron-left"></i>' ),
+	'prev_text' => ( '<i class="icon-cerax-left"></i>' ),
 
-	'next_text' => ( '<i class="icon-cerax-chevron-right1"></i>' ),
+	'next_text' => ( '<i class="icon-cerax-right"></i>' ),
 
 ) );
 

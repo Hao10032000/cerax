@@ -1978,7 +1978,7 @@ function themesflat_social_single() {
 
         ?>
 
-        <div class="social-share-article"><h5><?php echo esc_html__( 'Share', 'cerax' ); ?></h5>        
+        <div class="social-share-article"><h5><?php echo esc_html__( 'Share this post:', 'cerax' ); ?></h5>        
 
             <ul class="themesflat-socials">
 

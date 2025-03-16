@@ -58,16 +58,17 @@ $page_title_video_url = themesflat_get_opt('page_title_video_url');
                     
                     if( is_singular('post') ) {
 
-                        if ( themesflat_get_opt( 'breadcrumb_enabled' ) == 1 ) {
-    
-                            themesflat_breadcrumb();
-                        }
-
+                        
                         if ( themesflat_get_opt('page_title_heading_enabled') == 1 ) {
 
                             echo sprintf('<h1 class="page-title-heading">%s</h1>', $title); 
     
-                        }  
+                        }
+                        if ( themesflat_get_opt( 'breadcrumb_enabled' ) == 1 ) {
+    
+                            themesflat_breadcrumb();
+                        }
+  
                         while ( have_posts() ) : the_post();
                         echo '<div class="post-meta pagetitle-meta">';
                             $meta_elements = themesflat_layout_draganddrop(themesflat_get_opt( 'meta_elements' ));
@@ -87,7 +88,7 @@ $page_title_video_url = themesflat_get_opt('page_title_video_url');
                                             esc_attr( sprintf( esc_html__( 'View all posts by %s', 'cerax' ), get_the_author() ) ),get_the_author());
                                         echo '</span>';
                                 } elseif ( 'comment' == $meta_element ) {
-                                    echo'<span class="item-meta post-comments"><i class="meta-icon icon-cerax-comments" aria-hidden="true"></i><span class="meta-text">';
+                                    echo'<span class="item-meta post-comments"><span class="meta-text">';
                                             comments_number ();
                                     echo '</span></span>';
                                 } elseif ( 'view' == $meta_element ) {

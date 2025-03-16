@@ -94,9 +94,9 @@ $themesflat_thumbnail = $imgs[$layout];
 
     <div class="box-wrapper">
 
-        <h3 class="box-title"><?php esc_html_e( 'Related articles', 'cerax' ) ?></h3>
+        <h3 class="box-title"><?php esc_html_e( 'Trending news', 'cerax' ) ?></h3>
 
-        <p><?php esc_html_e( 'Your go-to source for mental health insights, tools, and advice.', 'cerax' ) ?></p>
+        <p><?php esc_html_e( 'Nam commodo semper molestie. Duis eget pretium metus. Vestibulum ante ipsum', 'cerax' ) ?></p>
 
         <div class="box-content">
 
@@ -133,6 +133,7 @@ $themesflat_thumbnail = $imgs[$layout];
 
 
                             <div class="content-post">            
+                                <?php get_template_part( 'tpl/entry-content/entry-content-meta' ); ?>
 
                                 <h2 class="entry-title">
 
@@ -142,9 +143,7 @@ $themesflat_thumbnail = $imgs[$layout];
 
                                     </a>
 
-                                </h2>
-                                
-                                <?php get_template_part( 'tpl/entry-content/entry-content-meta' ); ?>
+                                </h2>                           
 
                                 <?php 
 
