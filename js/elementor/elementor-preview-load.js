@@ -20,6 +20,8 @@
 
         elementor.settings.page.addChangeCallback( 'header_sidebar_toggler', handleReloadPreview );
 
+        elementor.settings.page.addChangeCallback( 'header_button_show', handleReloadPreview );
+
         elementor.settings.page.addChangeCallback( 'header_wishlist_icon', handleReloadPreview );
 
         elementor.settings.page.addChangeCallback( 'style_blog_single', handleReloadPreview );

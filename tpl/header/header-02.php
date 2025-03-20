@@ -30,24 +30,6 @@ if (themesflat_get_opt_elementor('header_infor_phone') != '') {
 
 
 
-$topbar_email = themesflat_get_opt('topbar_email');
-
-if (themesflat_get_opt_elementor('topbar_email') != '') {
-
-    $topbar_email = themesflat_get_opt_elementor('topbar_email');
-
-}
-
-$topbar_email_title = themesflat_get_opt('topbar_email_title');
-
-if (themesflat_get_opt_elementor('topbar_email_title') != '') {
-
-    $topbar_email_title = themesflat_get_opt_elementor('topbar_email_title');
-
-}
-
-
-
 $header_info_phone_number = themesflat_get_opt('header_info_phone_number');
 
 if (themesflat_get_opt_elementor('header_info_phone_number') != '') {
@@ -61,6 +43,14 @@ $header_info_phone_number_title = themesflat_get_opt('header_info_phone_number_t
 if (themesflat_get_opt_elementor('header_info_phone_number_title') != '') {
 
     $header_info_phone_number_title = themesflat_get_opt_elementor('header_info_phone_number_title');
+
+}
+
+$header_info_phone_icon = themesflat_get_opt('header_info_phone_icon');
+
+if (themesflat_get_opt_elementor('header_info_phone_icon') != '') {
+
+    $header_info_phone_icon = themesflat_get_opt_elementor('header_info_phone_icon');
 
 }
 
@@ -80,16 +70,6 @@ $header_button_url = themesflat_get_opt('header_button_url');
 
 
 
-$social_header = themesflat_get_opt('social_header');
-
-if (themesflat_get_opt_elementor('social_header') != '') {
-
-    $social_header = themesflat_get_opt_elementor('social_header');
-
-}
-
-
-
 $topbar_address2 = themesflat_get_opt('topbar_address2');
 
 if (themesflat_get_opt_elementor('topbar_address2') != '') {
@@ -98,13 +78,6 @@ if (themesflat_get_opt_elementor('topbar_address2') != '') {
 
 }
 
-$topbar_address3 = themesflat_get_opt('topbar_address3');
-
-if (themesflat_get_opt_elementor('topbar_address3') != '') {
-
-    $topbar_address3 = themesflat_get_opt_elementor('topbar_address3');
-
-}
 
 $topbar_address4 = themesflat_get_opt('topbar_address4');
 
@@ -114,25 +87,7 @@ if (themesflat_get_opt_elementor('topbar_address4') != '') {
 
 }
 
-
-
-$social_topbar = themesflat_get_opt('social_topbar');
-
-if (themesflat_get_opt_elementor('social_topbar') != '') {
-
-    $social_topbar = themesflat_get_opt_elementor('social_topbar');
-
-}
-
-
-
-
-
 ?>
-
-
-
-<?php get_template_part( 'tpl/topbar'); ?>
 
 <header id="header" class="header header-02 <?php echo themesflat_get_opt_elementor('extra_classes_header'); ?>">
 
@@ -166,10 +121,28 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
 
                         <div class="header-ct-right">
 
-                            <div class="info-content"><span
-                                    class="title"><?php echo wp_kses_post($header_info_phone_number_title); ?></span><?php echo wp_kses_post($header_info_phone_number); ?>
+                            <div class="info-content">
+                                <div class="icon">
+                                    <?php echo wp_kses_post($header_info_phone_icon); ?>
+                                </div>
+                                <div class="content">
+                                <div class="title">
+                                    <?php echo wp_kses_post($header_info_phone_number_title); ?>
+                                </div>
+                                <span><?php echo wp_kses_post($header_info_phone_number); ?></span>
+
+                                </div>
+                                
                             </div>
 
+
+
+                            <?php if ( $header_button == 1 ) :?>
+
+                            <a class="tf-btn"
+                                href="<?php echo esc_url(themesflat_get_opt('header_button_url')) ?>"><span><?php echo wp_kses($header_button_text, themesflat_kses_allowed_html()); ?></span></a>
+
+                            <?php endif;?>
                             <?php if ( $header_search_box == 1 ) :?>
 
                             <div class="show-search">
@@ -177,13 +150,6 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
                                 <a href="#"><i class="icon-cerax-search"></i></a>
 
                             </div>
-
-                            <?php endif;?>
-
-                            <?php if ( $header_button == 1 ) :?>
-
-                            <a class="tf-btn"
-                                href="<?php echo esc_url(themesflat_get_opt('header_button_url')) ?>"><span><?php echo wp_kses($header_button_text, themesflat_kses_allowed_html()); ?></span></a>
 
                             <?php endif;?>
 
@@ -202,7 +168,7 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
                             <?php endif;?>
 
                         </div>
-                        
+
                         <div class="btn-menu">
 
                             <span class="line-1"></span>
@@ -250,8 +216,6 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
             <div class="infor-topbar">
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address2); ?></span>
-
-                <span class="list"><?php echo wp_kses_post( $topbar_address3); ?></span>
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address4); ?></span>
 

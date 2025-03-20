@@ -44,26 +44,12 @@ function themesflat_customize_default($key) {
 
 		'header_message' => 0 ,
 
-		'topbar_address_title' => 'Address',
 
+		'topbar_address2' => '<i class="icon-cerax-mail"></i> example@gmail.com',
 
-        'topbar_address1' => '<i class="icon-cerax-map"></i> 101 E 129th St, East Chicago, IN 46312, US',
+		'topbar_address4' => '<i class="icon-cerax-phone"></i> +61 3 8376 6284',
 
-		'topbar_address2' => '<i class="icon-cerax-map"></i> 101 E 129th St, East Chicago, IN 46312, US',
-
-		'topbar_address3' => '<i class="icon-cerax-mail"></i> hi.avitex@gmail.com',
-
-		'topbar_address4' => '<i class="icon-cerax-phone"></i> 1-555-678-8888',
-
-		'topbar_address5' => '<i class="icon-cerax-map"></i> Hopkins, Minnesota(MN), 55305',
-
-
-
-		'topbar_email_label' => '<i class="icon-cerax-ona-50"></i>',
-
-		'topbar_email' => 'hello@support.com',
-
-		'topbar_email_title' => 'Support',
+		'topbar_address5' => '<i class="icon-cerax-map"></i> 2715 Ash Dr. San Jose, South Dakota 83475',
 
 		'social_topbar' => 1,
 
@@ -113,11 +99,11 @@ function themesflat_customize_default($key) {
 
 		'header_button_url' => '',
 
-		'header_info_phone_icon' => '<i class="icon-cerax-ona-49"></i>',
+		'header_info_phone_icon' => '<i class="icon-cerax-phone"></i>',
 
-		'header_info_phone_number' => 'Phone Number',
+		'header_info_phone_number' => '61 3 8376 6284',
 
-		'header_info_phone_number_title' => 'Call us',
+		'header_info_phone_number_title' => 'Have a question',
 
 		'show_post_navigator' => 0,
 

@@ -60,13 +60,6 @@ if (themesflat_get_opt_elementor('topbar_address2') != '') {
 
 }
 
-$topbar_address3 = themesflat_get_opt('topbar_address3');
-
-if (themesflat_get_opt_elementor('topbar_address3') != '') {
-
-    $topbar_address3 = themesflat_get_opt_elementor('topbar_address3');
-
-}
 
 $topbar_address4 = themesflat_get_opt('topbar_address4');
 
@@ -203,8 +196,6 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
             <div class="infor-topbar">
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address2); ?></span>
-
-                <span class="list"><?php echo wp_kses_post( $topbar_address3); ?></span>
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address4); ?></span>
 

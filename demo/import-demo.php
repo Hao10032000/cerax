@@ -20,7 +20,7 @@ function themesflat_import_files() {
 
             'import_customizer_file_url' => esc_url(THEMESFLAT_LINK.'/demo/options.dat'),
 
-            'import_preview_image_url'   => esc_url(THEMESFLAT_LINK.'screenshot.png'),
+            'import_preview_image_url'   => esc_url(THEMESFLAT_LINK.'screenshot.jpg'),
 
             'import_notice'              => esc_html__( 'After you import this demo, you will have to setup the MailChimp form.', 'cerax' ),
 

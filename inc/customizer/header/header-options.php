@@ -339,6 +339,43 @@ $wp_customize->add_setting(
 
 
 // Phone Number title
+$wp_customize->add_setting(
+
+    'header_info_phone_icon',
+
+    array(
+
+        'default' => themesflat_customize_default('header_info_phone_icon'),
+
+        'sanitize_callback' => 'themesflat_sanitize_text'
+
+    )
+
+);
+
+$wp_customize->add_control(
+
+    'header_info_phone_icon',
+
+    array(
+
+        'label' => esc_html__( 'Icon Phone', 'cerax' ),
+
+        'section' => 'section_options',
+
+        'type' => 'text',
+
+        'priority' => 10,
+
+        'active_callback' => function () use ( $wp_customize ) {
+
+            return 'header-02' === $wp_customize->get_setting( 'style_header' )->value();
+
+        }, 
+
+    )
+
+);
 
 $wp_customize->add_setting(
 

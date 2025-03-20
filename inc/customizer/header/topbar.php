@@ -90,58 +90,6 @@ $wp_customize->add_control( new themesflat_RadioImages($wp_customize,
 
 ); 
 
-
-
-// address
-$wp_customize->add_setting(
-
-    'topbar_address1',
-
-    array(
-
-        'default' => themesflat_customize_default('topbar_address1'),
-
-        'sanitize_callback' => 'themesflat_sanitize_text'
-
-    )
-
-);
-
-$wp_customize->add_control(
-
-    'topbar_address1',
-
-    array(
-
-        'label' => esc_html__( 'Topbar Awards', 'cerax' ),
-
-        'section' => 'section_topbar',
-
-        'type' => 'text',
-
-        'priority' => 3,
-
-        'active_callback' => function () use ( $wp_customize ) {
-
-            $condition3    = $wp_customize->get_setting( 'topbar_show' )->value();
-
-            $condition4 = $wp_customize->get_setting( 'style_topbar' )->value();
-
-        
-
-            if ( 1 === $condition3 && 'topbar-default' === $condition4 ) {
-
-                return true;
-
-            }
-
-            return false;
-
-        },
-
-    )
-
-);
 $wp_customize->add_setting(
 
     'topbar_address2',
@@ -192,55 +140,6 @@ $wp_customize->add_control(
 
 );
 
-$wp_customize->add_setting(
-
-    'topbar_address3',
-
-    array(
-
-        'default' => themesflat_customize_default('topbar_address3'),
-
-        'sanitize_callback' => 'themesflat_sanitize_text'
-
-    )
-
-);
-
-$wp_customize->add_control(
-
-    'topbar_address3',
-
-    array(
-
-        'label' => esc_html__( 'Topbar Hours', 'cerax' ),
-
-        'section' => 'section_topbar',
-
-        'type' => 'text',
-
-        'priority' => 3,
-
-        'active_callback' => function () use ( $wp_customize ) {
-
-            $condition3    = $wp_customize->get_setting( 'topbar_show' )->value();
-
-            $condition4 = $wp_customize->get_setting( 'style_topbar' )->value();
-
-        
-
-            if ( 1 === $condition3 && 'topbar-default' === $condition4 ) {
-
-                return true;
-
-            }
-
-            return false;
-
-        },
-
-    )
-
-);
 
 $wp_customize->add_setting(
 

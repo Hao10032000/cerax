@@ -60,13 +60,6 @@ if (themesflat_get_opt_elementor('topbar_address2') != '') {
 
 }
 
-$topbar_address3 = themesflat_get_opt('topbar_address3');
-
-if (themesflat_get_opt_elementor('topbar_address3') != '') {
-
-    $topbar_address3 = themesflat_get_opt_elementor('topbar_address3');
-
-}
 
 $topbar_address4 = themesflat_get_opt('topbar_address4');
 
@@ -120,13 +113,6 @@ if (themesflat_get_opt_elementor('header_message') != '') {
 
 }
 
-$topbar_address1 = themesflat_get_opt('topbar_address1');
-
-if (themesflat_get_opt_elementor('topbar_address1') != '') {
-
-    $topbar_address2 = themesflat_get_opt_elementor('topbar_address1');
-
-}
 
 $topbar_address2 = themesflat_get_opt('topbar_address2');
 
@@ -136,13 +122,6 @@ if (themesflat_get_opt_elementor('topbar_address2') != '') {
 
 }
 
-$topbar_address3 = themesflat_get_opt('topbar_address3');
-
-if (themesflat_get_opt_elementor('topbar_address3') != '') {
-
-    $topbar_address3 = themesflat_get_opt_elementor('topbar_address3');
-
-}
 
 $topbar_address4 = themesflat_get_opt('topbar_address4');
 
@@ -164,67 +143,13 @@ if (themesflat_get_opt_elementor('style_topbar') != '') {
 ?>
 
 
-<?php if ( $topbar == 1 ) :?>
-
-<div class="themesflat-top style-02">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-12">
-
-                <div class="container-inside">
-
-                    <div class="content-left">
-
-                        <?php if( $topbar_address1 != '' ): ?>
-
-                        <div class="infor-topbar">
-
-                            <span class="list"><?php echo wp_kses_post( $topbar_address2); ?></span>
-
-                            <span class="list"><?php echo wp_kses_post( $topbar_address3); ?></span>
-
-                        </div>
-
-                        <?php endif; ?>
-
-                    </div><!-- content-left -->
-
-                    <div class="content-right">
-
-                        <p>Follow Us</p>
-
-                        <?php  
-
-                            if ( $social_topbar == 1 ):
-
-                            themesflat_render_social();    
-
-                            endif;
-
-                         ?>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div><!-- /.container -->
-
-</div><!-- /.topbar -->
-
-<?php endif; ?>
+<?php get_template_part( 'tpl/topbar'); ?>
 
 <header id="header" class="header hd-sticky header-03 <?php echo themesflat_get_opt_elementor('extra_classes_header'); ?>">
 
     <div class="inner-header">
 
-        <div class="container">
+        <div class="container1">
 
             <div class="row">
 
@@ -263,7 +188,7 @@ if (themesflat_get_opt_elementor('style_topbar') != '') {
 
                             <?php if ( $header_search_box == 1 ) :?>
 
-                            <div class="show-search">
+                            <div class="show-search icon-bg">
 
                                 <a href="#"><i class="icon-cerax-search"></i></a>
 
@@ -273,7 +198,7 @@ if (themesflat_get_opt_elementor('style_topbar') != '') {
 
                             <?php if ( $header_sidebar_toggler == 1 ) :?>
 
-                            <div class="header-modal-menu-left-btn">
+                            <div class="header-modal-menu-left-btn icon-bg">
 
                                 <div class="modal-menu-left-btn">
 
@@ -336,8 +261,6 @@ if (themesflat_get_opt_elementor('style_topbar') != '') {
             <div class="infor-topbar">
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address2); ?></span>
-
-                <span class="list"><?php echo wp_kses_post( $topbar_address3); ?></span>
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address4); ?></span>
 

@@ -919,6 +919,33 @@ class themesflat_options_elementor {
             ]
 
         );
+        $element->add_control(
+
+            'header_button_show',
+
+            [
+
+                'label'     => esc_html__( 'Header Button', 'cerax'),
+
+                'type'      => Controls_Manager::SELECT,
+
+                'default'   => '',
+
+                'options'   => [
+
+                    '' => esc_html__( 'Theme Setting', 'cerax'),
+
+                    0       => esc_html__( 'Hide', 'cerax'),
+
+                    1       => esc_html__( 'Show', 'cerax'),                    
+
+                ],
+
+                'condition' => [ 'style_header!' => '' ],
+
+            ]
+
+        );
 
 
 
