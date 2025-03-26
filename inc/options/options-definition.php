@@ -628,7 +628,7 @@ function themesflat_customize_default($key) {
 
 		'footer_widget_areas' => 3,
 
-		'footer_controls' => array('padding-top' => '102px', 'padding-bottom' =>'56px' ),
+		'footer_controls' => array('padding-top' => '104px', 'padding-bottom' =>'5px' ),
 
 		'footer1' => 'footer-1',
 

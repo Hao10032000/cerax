@@ -494,9 +494,40 @@
     a(window).on('scroll', function () {
         let scrollTop = a(this).scrollTop();
         a('.rellax').css({
-          transform: `translateY(${scrollTop * 0.1}px)` // Điều chỉnh tốc độ parallax
+            transform: `translateY(${scrollTop * 0.1}px)` // Điều chỉnh tốc độ parallax
         });
-      });
+    });
+    var headerFixed2 = function () {
+        let lastScrollTop = 0;
+        let delta = 5;
+        let navbarHeight = $(".header-boxed").outerHeight();
+        let didScroll = false;
+
+        $(window).scroll(function () {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                let st = $(window).scrollTop();
+                navbarHeight = $(".header-boxed").outerHeight();
+
+                if (st > navbarHeight) {
+                    if (st > lastScrollTop + delta) {
+                        $(".header-boxed").css("top", `-${navbarHeight}px`);
+                    } else if (st < lastScrollTop - delta) {
+                        $(".header-boxed").css("top", "0");
+                        $(".header-boxed").addClass("header-bg");
+                    }
+                } else {
+                    $(".header-boxed").css("top", "unset");
+                    $(".header-boxed").removeClass("header-bg");
+                }
+                lastScrollTop = st;
+                didScroll = false;
+            }
+        }, 100);
+    };
 
 
     a(function () {

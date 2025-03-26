@@ -314,6 +314,8 @@ if (themesflat_get_opt_elementor('social_topbar') != '') {
 
                 <span class="list"><?php echo wp_kses_post( $topbar_address4); ?></span>
 
+                <span class="list"><?php echo wp_kses_post( $topbar_address5); ?></span>
+
             </div>
 
             <?php endif; ?>
